@@ -1,0 +1,154 @@
+:root{
+    --cyan: #028178;
+    --blue: #346E7D;
+    --red:  #810202;
+    --green:#028120;
+
+    --white:#ffffff;
+    --grey: #262626;
+}
+html{
+    height: 100%;
+}
+body{
+    font-family: 'Comfortaa', cursive; 
+}
+.container{
+    margin: 0 auto;
+    padding: 30px 0;
+    width: 40%;
+    text-align: center;
+    color: var(--cyan);
+    background: linear-gradient(to right,#028178,#346E7D);
+    margin-bottom: 100px;
+    transition: .2s all;
+}
+.content{
+    padding: 30px 0;
+    background: var(--white);
+    transition: .2s all;
+}
+.conta-title{
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--cyan);
+}
+#numconta{
+    color: var(--grey);
+    margin: 10px 0 30px 0;
+    font-weight: bold;
+    font-family: consolas;
+}
+#saldo:hover{
+    cursor: pointer;
+}
+#saldo{
+    text-decoration: none;
+}
+#saldo:visited{
+    color: var(--blue);
+}
+#saldo:hover{
+    color: var(--grey);
+}
+#value{
+    background: var(--grey);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    padding: 9px 5px;
+    text-align: center;
+    margin: 30px 0 5px 0;
+    font-size: 15px;
+}
+.before-value{
+    background: var(--grey);
+    color: var(--white);
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 3px;
+}
+.logo-title{
+    text-align: center;
+    margin: 40px 0;
+}
+.logo-img{
+    width: 30%;
+}
+.saque, .red, .deposito{
+    color: var(--red);
+    font-weight: bold;
+}
+.deposito, .green{
+    color: var(--green);
+    font-weight: bold;
+}
+.deposito::before{
+    content: "+ R$";
+}
+#alert{
+    color: var(--grey);
+}
+.type{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.saque::before, .boleto::before{
+    content: "- R$";
+}
+.deposito-min::before{
+    content: "*";
+    color: var(--cyan);
+}
+.time::after{
+    content: "hrs";
+}
+td{
+    padding: 20px;
+}
+#transactions-table{
+    display: none;
+}
+.button{
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 10px;
+    border: var(--cyan) 3px solid;
+    background: none;
+    padding: 10px;
+    font-family: Comfortaa;
+    color: var(--cyan);
+    transition: .15s all;
+}
+.button:hover{
+    cursor: pointer;
+    border: var(--grey) 3px solid;
+    color: var(--grey);
+}
+.footer {
+    font-family: Raleway;
+    font-weight: lighter;
+    position: fixed;
+    font-size: 15px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to right,#028178,#346E7D);
+    color: var(--white);
+    text-align: center;
+    padding: 20px 0;
+}
+.transactions-div{
+    margin: 0 auto;
+    text-align: center;
+}
+.transactions-table{
+    display: inline;
+    text-align: center;
+    transition: .2s all;
+}
+th{
+    color: var(--grey);
+    font-size: 25px;
+    font-weight: bold;
+}
